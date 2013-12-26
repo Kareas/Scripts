@@ -3,6 +3,6 @@ Scripts
 
 Various scripts to make stuff easier
 
-readvsv.php
+<b>readvsv.php</b>
 
 Step through a .csv file to get its contents
