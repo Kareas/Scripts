@@ -11,50 +11,16 @@
 				
 				//skip headers
 				if($row != 2){
-					//oct1
+					
+					//column 1
 					if($c == 0){
-						$oct1 = $data[$c];
+						$col2 = $data[$c];
 					}
-					//oct2
+					//column 1
 					if($c == 1){
-						$oct2 = $data[$c];
+						$col1 = $data[$c];
 					}
-					//oct3
-					if($c == 2){
-						$oct3 = $data[$c];
-					}
-					//oct4
-					if($c == 3){
-						$oct4 = $data[$c];
-					}
-					//description
-					if($c == 4){
-						$desc = $data[$c];
-					}
-					//DNS
-					if($c == 5){
-						$dns = $data[$c];
-					}
-					//location
-					if($c == 6){
-						$loc = $data[$c];
-					}
-					//patchpanel
-					if($c == 7){
-						$pp = $data[$c];
-					}
-					//switch
-					if($c == 8){
-						$switch = $data[$c];
-					}
-					//Port
-					if($c == 9){
-						$port = $data[$c];
-					} 
-					//Wire MAC adddress
-					if($c == 10){
-						$wiredmac = $data[$c];
-					}
+					
 					
 					 
 				}
@@ -63,14 +29,10 @@
 			}
 			
 			
-			//remove periods for db
-			$macaddressaddpieces = explode(".", $$wiredmac);
-
-			//remove periods for db
-			//$wirelessmacaddpieces = explode(".", $wirelessmacadd);
 			
-			echo "IP: ".$oct1.$oct2.$oct3.$oct4." DESC: ".$desc." DNS: ".$dns.
-					" Location: ".$loc." Patch: ".$pp." Port: ".$port." Wired MAC: ".$wiredmac."<br>";
+			
+			echo "Column 1" . $col1;
+			echo "Column 2" . $col2;
 					
 				
 			
